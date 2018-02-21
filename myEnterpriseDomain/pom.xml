@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>myEnterpriseProject</artifactId>
+        <groupId>pl.blaszak.practise.</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>myEnterpriseDomain</artifactId>
+    <packaging>jar</packaging>
+    <dependencies>
+
+    </dependencies>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources/schemas</directory>
+                <targetPath>src/main/resources/schemas</targetPath>
+            </resource>
+            <resource>
+                <directory>src/main/resources/bindings</directory>
+                <targetPath>src/main/resources/bindings</targetPath>
+            </resource>
+            <resource>
+                <directory>src/main/resources/schemaExamples</directory>
+                <targetPath>src/main/resources/schemaExamples</targetPath>
+            </resource>
+        </resources>
+
+        <plugins>
+            <plugin>
+                <groupId>org.jvnet.jaxb2.maven2</groupId>
+                <artifactId>maven-jaxb2-plugin</artifactId>
+                <version>0.9.1</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <schemaDirectory>src/main/resources/schemas</schemaDirectory>
+                    <bindingDirectory>src/main/resources/bindings</bindingDirectory>
+                    <generateDirectory>src/main/java</generateDirectory>
+                    <episodeFile>src/main/resources/META-INF/domain-jaxb.episode</episodeFile>
+                    <schemaIncludes>
+                        <include>*.xsd</include>
+                    </schemaIncludes>
+                    <schemaExcludes>
+                        <exclude>*.xs</exclude>
+                    </schemaExcludes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
