@@ -5,12 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>pl.blaszak.practise.</groupId>
-    <artifactId>myEnterpriceProject</artifactId>
+    <artifactId>myEnterpriseProject</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>myEnterpriceDomain</module>
-        <module>myEnterpriceEngine</module>
+        <module>myEnterpriseDomain</module>
+        <module>myEnterpriseEngine</module>
     </modules>
 
 

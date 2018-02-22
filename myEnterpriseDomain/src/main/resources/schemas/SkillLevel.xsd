@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="SkillLevel" final="restriction">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="NOVICE" />
+            <xs:enumeration value="MEDIUM" />
+            <xs:enumeration value="SENIOR" />
+            <xs:enumeration value="GURU" />
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

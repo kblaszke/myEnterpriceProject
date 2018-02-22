@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jaxb:bindings
+        version="2.1"
+        xmlns:jaxb="http://java.sun.com/xml/ns/jaxb">
+
+    <jaxb:bindings schemaLocation="../schemas/Person.xsd" version="2.1"
+                   xmlns:jaxb="http://java.sun.com/xml/ns/jaxb">
+        <jaxb:schemaBindings>
+            <jaxb:package name="pl.blaszak.practise.myEnterpriseProject.domain"/>
+        </jaxb:schemaBindings>
+    </jaxb:bindings>
+</jaxb:bindings>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Person xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schemas/Person.xsd">
+	<login>kblaszke</login>
+	<firstName>Krzysztof</firstName>
+	<secondName>Blaszke</secondName>
+	<email>kblaszke@outlook.com</email>
+	<gender>MALE</gender>
+	<skillArray>
+		<skills>
+			<language>Java</language>
+			<level>MEDIUM</level>
+		</skills>
+		<skills>
+			<language>C#</language>
+			<level>SENIOR</level>
+		</skills>
+	</skillArray>
+</Person>
