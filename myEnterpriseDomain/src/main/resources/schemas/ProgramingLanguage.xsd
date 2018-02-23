@@ -2,15 +2,15 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:simpleType name="ProgramingLanguage" final="restriction">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="C" />
-            <xs:enumeration value="C#" />
-            <xs:enumeration value="C++" />
-            <xs:enumeration value="Java" />
-            <xs:enumeration value="JavaEE" />
-            <xs:enumeration value="Scala" />
+            <xs:enumeration value="C"  />
+            <xs:enumeration value="C_SHARP" />
+            <xs:enumeration value="CPP" />
+            <xs:enumeration value="JAVA" />
+            <xs:enumeration value="JAVA_EE" />
+            <xs:enumeration value="SCALA" />
             <xs:enumeration value="PHP" />
-            <xs:enumeration value="Rubby" />
-            <xs:enumeration value="Python" />
+            <xs:enumeration value="RUBY" />
+            <xs:enumeration value="PYTHON" />
         </xs:restriction>
     </xs:simpleType>
 </xs:schema>
