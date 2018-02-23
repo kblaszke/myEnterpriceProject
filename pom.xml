@@ -7,11 +7,14 @@
     <groupId>pl.blaszak.practise.</groupId>
     <artifactId>myEnterpriseProject</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>${project.version}</version>
     <modules>
         <module>myEnterpriseDomain</module>
         <module>myEnterpriseEngine</module>
     </modules>
 
+    <properties>
+        <project.version>1.0-SNAPSHOT</project.version>
+    </properties>
 
 </project>
